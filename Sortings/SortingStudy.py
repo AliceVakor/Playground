@@ -2,7 +2,7 @@ __author__ = 'korol'
 
 import random
 import types
-from Ivan.Heap import Heap
+import Heap
 from QuickSort import quick_sort
 from HoareQuickSort import quick_sort_hoare
 
@@ -44,13 +44,13 @@ class Sortings:
     def find_maximum(self):
 
         if not isinstance(self.list, types.ListType) and self.list is not None:
-            raise Exception("Can not find max_val for object of type not 'list'")
+            raise Exception("Can not find maximum for object of type not 'list'")
 
         if self.list is None:
-            raise Exception("Can not find max_val in a list 'None'")
+            raise Exception("Can not find maximum in a list 'None'")
 
         if len(self.list) == 0:
-            raise Exception("Can not find max_val in an empty list")
+            raise Exception("Can not find maximum in an empty list")
 
         for element in self.list:
             if not isinstance(element, (int, long, float)):
