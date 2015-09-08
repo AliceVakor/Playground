@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
         Scenario:
         1. Create an object of Heap class
         2. Initialize the heap by the list with partially ordered elements according to max heap concept:
-        https://en.wikipedia.org/wiki/Binary_heap#Heap_implementation
+            https://en.wikipedia.org/wiki/Binary_heap#Heap_implementation
         3. Call validate_that_list_is_heap()
 
         Expected result: The list validated as heap
